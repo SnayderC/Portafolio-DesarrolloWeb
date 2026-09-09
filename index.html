@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snayder Cedeño · Full Stack Developer</title>
+  <meta name="description" content="Portafolio de Snayder Cedeño, estudiante de Ingeniería en Software y desarrollador Full Stack. Proyectos, habilidades y contacto." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/utilities.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("portfolio-theme");
+        var theme = saved || ((window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="sr-only" href="#main-content">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__mark" aria-hidden="true">SC</span>
+        <span class="brand__name">Snayder Cedeño</span>
+      </a>
+
+      <nav class="navbar" aria-label="Navegación principal">
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link nav-link--active" aria-current="page">Inicio</a></li>
+          <li><a href="sobre-mi.html" class="nav-link">Sobre mí</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="proyectos.html" class="nav-link">Proyectos</a></li>
+          <li><a href="design-system.html" class="nav-link">Design System</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema claro/oscuro" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div>
+          <p class="section__eyebrow">Ingeniería en Software · 8vo semestre</p>
+          <h1>Hola, soy Snayder Cedeño</h1>
+          <p class="text-muted" style="font-size: var(--fs-lg)">
+            Desarrollador Full Stack en formación. Tengo 22 años, estoy a punto de
+            culminar la carrera y disfruto resolver problemas reales con código:
+            desde la base de datos hasta la interfaz que usa la gente.
+          </p>
+          <div class="hero__meta" aria-label="Resumen rápido">
+            <span class="badge badge-primary">Full Stack Developer</span>
+            <span class="badge">UNEMI</span>
+            <span class="badge">Último semestre</span>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="proyectos.html">Ver proyectos</a>
+            <a class="btn btn-outline" href="contacto.html">Contactarme</a>
+          </div>
+        </div>
+
+        <figure class="hero__figure">
+          <div class="avatar avatar--lg" role="img" aria-label="Avatar de Snayder Cedeño con las iniciales SC">SC</div>
+          <figcaption class="sr-only">Avatar de Snayder Cedeño — reemplazar por foto real cuando esté disponible.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header text-center" style="margin-inline:auto">
+          <p class="section__eyebrow">Qué me mueve</p>
+          <h2>Me gustan los desafíos y aprender sin parar</h2>
+          <p class="text-muted">
+            Eso me ha llevado a construir proyectos full-stack completos — con
+            autenticación, bases de datos reales y despliegue — en lugar de
+            quedarme solo en ejercicios de clase.
+          </p>
+        </div>
+
+        <div class="grid grid--skills">
+          <article class="card reveal">
+            <h3>Aprendizaje constante</h3>
+            <p class="text-muted">
+              Cada proyecto es una excusa para sumar una tecnología nueva:
+              de Django a Docker, de JavaScript puro a React.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Full Stack real</h3>
+            <p class="text-muted">
+              Me siento cómodo moviéndome entre frontend, backend y base de
+              datos dentro del mismo proyecto.
+            </p>
+          </article>
+          <article class="card reveal">
+            <h3>Resolver problemas reales</h3>
+            <p class="text-muted">
+              Prefiero construir herramientas que resuelvan una necesidad
+              concreta antes que demos sin propósito.
+            </p>
+          </article>
+        </div>
+
+        <p class="text-center mt-lg">
+          <a class="btn btn-secondary" href="sobre-mi.html">Conocer más sobre mí</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p class="mb-0">&copy; <span id="year"></span> Snayder Cedeño. Todos los derechos reservados.</p>
+      <ul class="footer__social">
+        <li>
+          <a href="https://github.com/SnayderC" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 4.93 3.2 9.11 7.64 10.59.56.1.76-.24.76-.54 0-.27-.01-1.17-.02-2.12-3.11.68-3.77-1.32-3.77-1.32-.51-1.29-1.24-1.64-1.24-1.64-1.01-.69.08-.67.08-.67 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.24.92.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.43-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.14a10.7 10.7 0 0 1 5.6 0c2.14-1.44 3.08-1.14 3.08-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.25-5.11 5.52.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.77.54C19.82 20.63 23 16.45 23 11.52 23 5.24 18.27.5 12 .5z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:cedenosnyder@gmail.com" aria-label="Enviar correo electrónico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6.5 12 13l9-6.5M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Volver al inicio de la página">↑</button>
+
+  <script src="js/nav.js" defer></script>
+  <script src="js/theme.js" defer></script>
+  <script src="js/scrolltop.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
