@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Design Tokens — fuente única de verdad para todas las decisiones visuales.
+   Toda la sección "Design System" de este sitio documenta estas variables.
+   ========================================================================== */
+
+:root {
+  /* --- Color: marca y superficies (tema claro, por defecto) --- */
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #7c3aed;
+  --color-accent: #06b6d4;
+
+  --color-success: #16a34a;
+  --color-error: #dc2626;
+
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-surface-alt: #eef2f9;
+  --color-border: #e2e8f0;
+
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-text-on-primary: #ffffff;
+
+  /* --- Tipografía --- */
+  --font-primary: "Poppins", "Segoe UI", Arial, sans-serif;
+  --font-mono: "Fira Code", "Courier New", monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.5rem;
+  --fs-4xl: 3.25rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.65;
+
+  /* --- Espaciado (escala base 4px/8px) --- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* --- Bordes y radios --- */
+  --border-width: 1px;
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 999px;
+
+  /* --- Sombras --- */
+  --shadow-sm: 0 1px 3px rgb(15 23 42 / 0.08);
+  --shadow-card: 0 4px 12px rgb(15 23 42 / 0.1);
+  --shadow-lg: 0 12px 32px rgb(15 23 42 / 0.16);
+
+  /* --- Layout --- */
+  --container-max: 1120px;
+  --header-height: 4.5rem;
+  --transition-base: 0.25s ease;
+  --transition-fast: 0.15s ease;
+
+  --z-header: 100;
+  --z-backdrop: 500;
+  --z-modal: 1000;
+  --z-toast: 1100;
+}
+
+/* --- Tema oscuro: se activa con [data-theme="dark"] en <html> ---
+   Guardado en localStorage para persistir la preferencia del usuario. */
+[data-theme="dark"] {
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-secondary: #a78bfa;
+  --color-accent: #22d3ee;
+
+  --color-background: #0b1120;
+  --color-surface: #131c2e;
+  --color-surface-alt: #1a2540;
+  --color-border: #26324a;
+
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-text-on-primary: #0b1120;
+
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.4);
+  --shadow-card: 0 4px 14px rgb(0 0 0 / 0.45);
+  --shadow-lg: 0 14px 36px rgb(0 0 0 / 0.55);
+}
