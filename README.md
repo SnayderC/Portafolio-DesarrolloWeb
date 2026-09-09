@@ -42,7 +42,7 @@ PORTAFOLIO/
 │   ├── form.js               Validación del formulario de contacto
 │   ├── scrolltop.js          Botón "volver al inicio"
 │   └── main.js                Año del footer + animaciones al hacer scroll
-└── assets/img/             Favicon e ilustraciones de proyectos
+└── assets/img/             Favicon y capturas reales de los proyectos
 ```
 
 ## Funcionalidades interactivas (JavaScript)
@@ -77,9 +77,7 @@ Luego abrir `http://localhost:8000`.
 - Los proyectos mostrados (TechCheck Pro, TechPoint POS, AI Routine
   Planner) son proyectos reales disponibles en
   [github.com/SnayderC](https://github.com/SnayderC).
-- Las imágenes de los proyectos son ilustraciones representativas
-  (no capturas de pantalla reales); se recomienda reemplazarlas por
-  screenshots reales antes de la entrega final.
+- Las imágenes de los proyectos son capturas reales de cada plataforma.
 - El avatar es un placeholder con iniciales generado en CSS; reemplazar
   por una foto real en `index.html` (`.hero__figure`) cuando esté disponible.
 - El formulario de contacto valida en el cliente pero no envía correos
@@ -88,8 +86,7 @@ Luego abrir `http://localhost:8000`.
 
 ## Checklist antes de entregar
 
-- [ ] Reemplazar avatar placeholder por foto real (opcional).
-- [ ] Reemplazar ilustraciones de proyectos por capturas reales (opcional).
+- [ ] Reemplazar avatar placeholder por foto real.
 - [ ] Crear repositorio público en GitHub y subir el proyecto con varios commits.
 - [ ] Publicar con GitHub Pages.
 - [ ] Probar en ventana de incógnito: navegación, JS, CSS, imágenes y consola sin errores.
