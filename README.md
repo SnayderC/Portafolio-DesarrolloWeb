@@ -42,7 +42,9 @@ PORTAFOLIO/
 │   ├── form.js               Validación del formulario de contacto
 │   ├── scrolltop.js          Botón "volver al inicio"
 │   └── main.js                Año del footer + animaciones al hacer scroll
-└── assets/img/             Favicon y capturas reales de los proyectos
+├── assets/img/             Favicon, foto de perfil y capturas reales
+│   └── certs/              Miniaturas de certificados
+└── assets/certs/           PDFs reales de certificaciones
 ```
 
 ## Funcionalidades interactivas (JavaScript)
