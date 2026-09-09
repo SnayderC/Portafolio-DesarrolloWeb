@@ -1,7 +1,3 @@
-/**
- * Comportamiento común a todas las páginas: año del footer y
- * animación de aparición al hacer scroll (IntersectionObserver).
- */
 (function () {
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();

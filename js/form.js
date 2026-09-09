@@ -1,9 +1,3 @@
-/**
- * Validación del formulario de contacto en el cliente.
- * No hay backend: al validar correctamente se muestra un mensaje de éxito.
- * Para enviar correos reales, conectar el <form> a un servicio como
- * Formspree/EmailJS y quitar el preventDefault del submit.
- */
 (function () {
   var form = document.getElementById("contactForm");
   if (!form) return;

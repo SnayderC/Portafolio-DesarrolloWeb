@@ -1,7 +1,3 @@
-/* ==========================================================================
-   Base — reset mínimo, tipografía global y elementos HTML sin clases.
-   ========================================================================== */
-
 *,
 *::before,
 *::after {
@@ -115,7 +111,6 @@ fieldset {
   padding: 0;
 }
 
-/* --- Accesibilidad: foco visible consistente en toda la interfaz --- */
 :focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: 2px;
@@ -133,7 +128,6 @@ fieldset {
   border: 0;
 }
 
-/* --- Evita cualquier desbordamiento horizontal en móviles --- */
 html,
 body {
   overflow-x: hidden;

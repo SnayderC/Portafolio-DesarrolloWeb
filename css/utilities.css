@@ -1,7 +1,3 @@
-/* ==========================================================================
-   Utilidades — helpers pequeños y animaciones compartidas.
-   ========================================================================== */
-
 .text-center {
   text-align: center;
 }
@@ -40,7 +36,6 @@
   display: none !important;
 }
 
-/* --- Animación de aparición al hacer scroll --- */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -64,7 +59,6 @@
   }
 }
 
-/* --- Scroll lock cuando el menú móvil o el modal están abiertos --- */
 .no-scroll {
   overflow: hidden;
 }

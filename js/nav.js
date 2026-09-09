@@ -1,7 +1,3 @@
-/**
- * Menú de navegación responsive: abre/cierra el menú móvil,
- * lo cierra al hacer clic fuera, con Escape, o al elegir un enlace.
- */
 (function () {
   var toggle = document.getElementById("navToggle");
   var menu = document.getElementById("navMenu");

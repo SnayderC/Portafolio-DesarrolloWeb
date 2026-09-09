@@ -1,9 +1,3 @@
-/* ==========================================================================
-   Componentes — piezas reutilizables. Todo lo que aparece en Design System
-   usa exactamente estas clases, no hay estilos duplicados o paralelos.
-   ========================================================================== */
-
-/* --- Botones --- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -71,7 +65,6 @@
   transform: none;
 }
 
-/* --- Card genérica --- */
 .card {
   background-color: var(--color-surface);
   border: var(--border-width) solid var(--color-border);
@@ -80,7 +73,6 @@
   padding: var(--space-lg);
 }
 
-/* --- Card de proyecto --- */
 .project-card {
   display: flex;
   flex-direction: column;
@@ -136,7 +128,6 @@
   padding-top: var(--space-sm);
 }
 
-/* --- Badges / Tags (skills y tecnologías) --- */
 .badge {
   display: inline-flex;
   align-items: center;
@@ -184,7 +175,6 @@
   border-color: transparent;
 }
 
-/* --- Skill card --- */
 .skill-card {
   display: flex;
   flex-direction: column;
@@ -228,7 +218,6 @@
   background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
 }
 
-/* --- Formularios --- */
 .form {
   display: flex;
   flex-direction: column;
@@ -305,7 +294,6 @@ textarea.form-control {
   color: var(--color-error);
 }
 
-/* --- Theme toggle --- */
 .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -335,7 +323,6 @@ textarea.form-control {
   display: block;
 }
 
-/* --- Back to top --- */
 .back-to-top {
   position: fixed;
   right: var(--space-lg);
@@ -364,7 +351,6 @@ textarea.form-control {
   transform: translateY(0);
 }
 
-/* --- Filtros de proyectos --- */
 .filter-bar {
   display: flex;
   gap: var(--space-sm);
@@ -393,7 +379,6 @@ textarea.form-control {
   color: var(--color-text-on-primary);
 }
 
-/* --- Modal --- */
 .modal-backdrop {
   position: fixed;
   inset: 0;
@@ -469,7 +454,6 @@ textarea.form-control {
   flex-wrap: wrap;
 }
 
-/* --- Swatches (Design System: colores) --- */
 .swatch {
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -497,7 +481,6 @@ textarea.form-control {
   color: var(--color-text-muted);
 }
 
-/* --- Muestra de espaciado (Design System) --- */
 .space-row {
   display: flex;
   align-items: center;
@@ -519,7 +502,6 @@ textarea.form-control {
   flex-shrink: 0;
 }
 
-/* --- Avatar --- */
 .avatar {
   display: inline-flex;
   align-items: center;
@@ -550,7 +532,6 @@ textarea.form-control {
   font-size: var(--fs-base);
 }
 
-/* --- Code preview (Design System) --- */
 .code-preview {
   background-color: var(--color-surface-alt);
   border: var(--border-width) solid var(--color-border);

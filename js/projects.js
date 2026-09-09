@@ -1,8 +1,3 @@
-/**
- * Página de Proyectos: filtro por tecnología + modal con el detalle
- * de cada proyecto. Los datos del modal viven en data-* de cada card,
- * así no se duplica información entre la card y el modal.
- */
 (function () {
   var filterBar = document.querySelector(".filter-bar");
   var cards = Array.prototype.slice.call(document.querySelectorAll(".project-card"));
@@ -10,7 +5,6 @@
 
   if (!cards.length) return;
 
-  /* --- Filtro por tecnología --- */
   if (filterBar) {
     filterBar.addEventListener("click", function (event) {
       var btn = event.target.closest(".filter-btn");
@@ -33,7 +27,6 @@
     });
   }
 
-  /* --- Modal de detalle de proyecto --- */
   if (!modalBackdrop) return;
 
   var modalTitle = modalBackdrop.querySelector("#modalTitle");

@@ -1,7 +1,3 @@
-/**
- * Botón "volver al inicio": aparece tras bajar un poco en la página
- * y hace scroll suave al tope al hacer clic.
- */
 (function () {
   var button = document.getElementById("backToTop");
   if (!button) return;

@@ -1,7 +1,3 @@
-/**
- * Tema claro/oscuro con persistencia en localStorage.
- * Respeta prefers-color-scheme del sistema si el usuario no eligió nada aún.
- */
 (function () {
   var STORAGE_KEY = "portfolio-theme";
   var root = document.documentElement;
@@ -35,9 +31,7 @@
     try {
       localStorage.setItem(STORAGE_KEY, theme);
     } catch (err) {
-      /* localStorage no disponible (modo privado estricto); el tema sigue
-         funcionando en la sesión actual, solo no persiste. */
-    }
+      }
   }
 
   applyTheme(getPreferredTheme());
