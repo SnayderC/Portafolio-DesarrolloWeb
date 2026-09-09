@@ -78,15 +78,13 @@ Luego abrir `http://localhost:8000`.
   Planner) son proyectos reales disponibles en
   [github.com/SnayderC](https://github.com/SnayderC).
 - Las imágenes de los proyectos son capturas reales de cada plataforma.
-- El avatar es un placeholder con iniciales generado en CSS; reemplazar
-  por una foto real en `index.html` (`.hero__figure`) cuando esté disponible.
+- El avatar de Inicio usa la foto real (`assets/img/yo.jpeg`).
 - El formulario de contacto valida en el cliente pero no envía correos
   reales (no hay backend). Para conectarlo a un envío real, integrar un
   servicio como Formspree o EmailJS en `js/form.js`.
 
 ## Checklist antes de entregar
 
-- [ ] Reemplazar avatar placeholder por foto real.
 - [ ] Crear repositorio público en GitHub y subir el proyecto con varios commits.
 - [ ] Publicar con GitHub Pages.
 - [ ] Probar en ventana de incógnito: navegación, JS, CSS, imágenes y consola sin errores.
