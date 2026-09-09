@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Utilidades — helpers pequeños y animaciones compartidas.
+   ========================================================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-sm {
+  gap: var(--space-sm);
+}
+
+.gap-md {
+  gap: var(--space-md);
+}
+
+.mt-lg {
+  margin-top: var(--space-lg);
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* --- Animación de aparición al hacer scroll --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* --- Scroll lock cuando el menú móvil o el modal están abiertos --- */
+.no-scroll {
+  overflow: hidden;
+}

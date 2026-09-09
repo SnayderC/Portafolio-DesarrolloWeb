@@ -1,0 +1,563 @@
+/* ==========================================================================
+   Componentes — piezas reutilizables. Todo lo que aparece en Design System
+   usa exactamente estas clases, no hay estilos duplicados o paralelos.
+   ========================================================================== */
+
+/* --- Botones --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xs);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-sm);
+  border: var(--border-width) solid transparent;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  line-height: 1;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-on-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  box-shadow: var(--shadow-card);
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-sm {
+  padding: var(--space-2xs) var(--space-md);
+  font-size: var(--fs-xs);
+}
+
+.btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* --- Card genérica --- */
+.card {
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-lg);
+}
+
+/* --- Card de proyecto --- */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card__figure {
+  margin: 0;
+  aspect-ratio: 16 / 10;
+  background-color: var(--color-surface-alt);
+}
+
+.project-card__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  flex: 1;
+}
+
+.project-card__title {
+  font-size: var(--fs-lg);
+  margin-bottom: 0;
+}
+
+.project-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+  margin-block: var(--space-2xs) var(--space-sm);
+}
+
+.project-card__footer {
+  margin-top: auto;
+  display: flex;
+  gap: var(--space-sm);
+  padding-top: var(--space-sm);
+}
+
+/* --- Badges / Tags (skills y tecnologías) --- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3xs);
+  padding: var(--space-3xs) var(--space-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  background-color: var(--color-surface-alt);
+  color: var(--color-text);
+  border: var(--border-width) solid var(--color-border);
+}
+
+.badge-primary {
+  background-color: color-mix(in srgb, var(--color-primary) 12%, transparent);
+  color: var(--color-primary);
+  border-color: transparent;
+}
+
+.badge-level {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 0.65rem;
+}
+
+.badge-level--avanzado {
+  background-color: color-mix(in srgb, var(--color-success) 15%, transparent);
+  color: var(--color-success);
+  border-color: transparent;
+}
+
+.badge-level--intermedio {
+  background-color: color-mix(in srgb, var(--color-accent) 18%, transparent);
+  color: #0e7490;
+  border-color: transparent;
+}
+
+[data-theme="dark"] .badge-level--intermedio {
+  color: var(--color-accent);
+}
+
+.badge-level--basico {
+  background-color: color-mix(in srgb, var(--color-secondary) 15%, transparent);
+  color: var(--color-secondary);
+  border-color: transparent;
+}
+
+/* --- Skill card --- */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skill-card__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.skill-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface-alt);
+  font-weight: var(--fw-bold);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.skill-card__name {
+  margin: 0;
+  font-size: var(--fs-md);
+}
+
+.skill-level {
+  height: 0.5rem;
+  border-radius: var(--radius-full);
+  background-color: var(--color-border);
+  overflow: hidden;
+}
+
+.skill-level__fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
+/* --- Formularios --- */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+
+.form-label {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--color-text);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  border: var(--border-width) solid var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 20%, transparent);
+  outline: none;
+}
+
+.form-control.is-invalid {
+  border-color: var(--color-error);
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.form-hint {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+.form-error {
+  font-size: var(--fs-xs);
+  color: var(--color-error);
+  min-height: 1em;
+}
+
+.form-status {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  display: none;
+}
+
+.form-status.is-visible {
+  display: block;
+}
+
+.form-status--success {
+  background-color: color-mix(in srgb, var(--color-success) 15%, transparent);
+  color: var(--color-success);
+}
+
+.form-status--error {
+  background-color: color-mix(in srgb, var(--color-error) 12%, transparent);
+  color: var(--color-error);
+}
+
+/* --- Theme toggle --- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  border: var(--border-width) solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.theme-toggle svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.theme-toggle .icon-moon {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  display: block;
+}
+
+/* --- Back to top --- */
+.back-to-top {
+  position: fixed;
+  right: var(--space-lg);
+  bottom: var(--space-lg);
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: var(--fs-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(1rem);
+  transition: opacity var(--transition-base), transform var(--transition-base), visibility var(--transition-base);
+  z-index: var(--z-header);
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* --- Filtros de proyectos --- */
+.filter-bar {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+.filter-btn {
+  padding: var(--space-2xs) var(--space-md);
+  border-radius: var(--radius-full);
+  border: var(--border-width) solid var(--color-border);
+  background-color: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+}
+
+.filter-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.filter-btn.is-active {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+/* --- Modal --- */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(15 23 42 / 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-base), visibility var(--transition-base);
+}
+
+.modal-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: var(--color-background);
+  border-radius: var(--radius-md);
+  max-width: 640px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-xl);
+  position: relative;
+  transform: translateY(1rem) scale(0.98);
+  transition: transform var(--transition-base);
+}
+
+.modal-backdrop.is-open .modal {
+  transform: translateY(0) scale(1);
+}
+
+.modal__close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background-color: var(--color-surface-alt);
+  color: var(--color-text);
+  font-size: var(--fs-lg);
+  line-height: 1;
+}
+
+.modal__close:hover {
+  background-color: var(--color-border);
+}
+
+.modal__figure {
+  margin: 0 0 var(--space-md) 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+  margin-block: var(--space-sm);
+}
+
+.modal__links {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+/* --- Swatches (Design System: colores) --- */
+.swatch {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: var(--border-width) solid var(--color-border);
+}
+
+.swatch__color {
+  height: 4.5rem;
+}
+
+.swatch__meta {
+  padding: var(--space-sm);
+  background-color: var(--color-surface);
+}
+
+.swatch__name {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-sm);
+  display: block;
+}
+
+.swatch__value {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+}
+
+/* --- Muestra de espaciado (Design System) --- */
+.space-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.space-row__block {
+  height: 1.25rem;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  border-radius: var(--radius-sm);
+}
+
+.space-row__label {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  width: 9rem;
+  flex-shrink: 0;
+}
+
+/* --- Avatar --- */
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #fff;
+  font-weight: var(--fw-bold);
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar--lg {
+  width: 13rem;
+  height: 13rem;
+  font-size: var(--fs-3xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.avatar--sm {
+  width: 3rem;
+  height: 3rem;
+  font-size: var(--fs-base);
+}
+
+/* --- Code preview (Design System) --- */
+.code-preview {
+  background-color: var(--color-surface-alt);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-md);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  overflow-x: auto;
+  color: var(--color-text);
+}
