@@ -84,10 +84,3 @@ Luego abrir `http://localhost:8000`.
   reales a propósito (es un sitio estático, sin backend). Para
   conectarlo a un envío real, integrar un servicio como Formspree o
   EmailJS en `js/form.js`.
-
-## Checklist antes de entregar
-
-- [x] Crear repositorio público en GitHub y subir el proyecto con varios commits.
-- [x] Publicar con GitHub Pages.
-- [x] Probar en ventana de incógnito: navegación, JS, CSS, imágenes y consola sin errores.
-- [x] Probar en móvil (dispositivo real).
