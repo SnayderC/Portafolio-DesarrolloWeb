@@ -8,8 +8,7 @@ pasos de build.
 
 ## Demo
 
-Publicado con GitHub Pages: `https://SnayderC.github.io/<nombre-del-repo>/`
-*(actualizar con la URL real una vez publicado).*
+Publicado con GitHub Pages: https://snayderc.github.io/Portafolio-DesarrolloWeb/
 
 ## Tecnologías
 
@@ -87,7 +86,7 @@ Luego abrir `http://localhost:8000`.
 
 ## Checklist antes de entregar
 
-- [ ] Crear repositorio público en GitHub y subir el proyecto con varios commits.
-- [ ] Publicar con GitHub Pages.
+- [x] Crear repositorio público en GitHub y subir el proyecto con varios commits.
+- [x] Publicar con GitHub Pages.
 - [ ] Probar en ventana de incógnito: navegación, JS, CSS, imágenes y consola sin errores.
 - [ ] Probar en móvil (DevTools o dispositivo real).
