@@ -81,12 +81,13 @@ Luego abrir `http://localhost:8000`.
 - Las imágenes de los proyectos son capturas reales de cada plataforma.
 - El avatar de Inicio usa la foto real (`assets/img/yo.jpeg`).
 - El formulario de contacto valida en el cliente pero no envía correos
-  reales (no hay backend). Para conectarlo a un envío real, integrar un
-  servicio como Formspree o EmailJS en `js/form.js`.
+  reales a propósito (es un sitio estático, sin backend). Para
+  conectarlo a un envío real, integrar un servicio como Formspree o
+  EmailJS en `js/form.js`.
 
 ## Checklist antes de entregar
 
 - [x] Crear repositorio público en GitHub y subir el proyecto con varios commits.
 - [x] Publicar con GitHub Pages.
-- [ ] Probar en ventana de incógnito: navegación, JS, CSS, imágenes y consola sin errores.
-- [ ] Probar en móvil (DevTools o dispositivo real).
+- [x] Probar en ventana de incógnito: navegación, JS, CSS, imágenes y consola sin errores.
+- [x] Probar en móvil (dispositivo real).
