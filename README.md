@@ -10,6 +10,16 @@ pasos de build.
 
 Publicado con GitHub Pages: https://snayderc.github.io/Portafolio-DesarrolloWeb/
 
+## Capturas
+
+| Inicio (tema oscuro) | Sobre mí (tema oscuro) |
+|---|---|
+| ![Inicio](assets/img/screenshots/inicio-dark.png) | ![Sobre mí](assets/img/screenshots/sobre-mi-dark.png) |
+
+| Design System (tema claro) |
+|---|
+| ![Design System](assets/img/screenshots/design-system-light.png) |
+
 ## Tecnologías
 
 - HTML5 semántico (`header`, `nav`, `main`, `section`, `article`, `aside`, `figure`, `footer`)
@@ -41,8 +51,9 @@ PORTAFOLIO/
 │   ├── form.js               Validación del formulario de contacto
 │   ├── scrolltop.js          Botón "volver al inicio"
 │   └── main.js                Año del footer + animaciones al hacer scroll
-├── assets/img/             Favicon, foto de perfil y capturas reales
-│   └── certs/              Miniaturas de certificados
+├── assets/img/             Favicon, foto de perfil y capturas reales de proyectos
+│   ├── certs/              Miniaturas de certificados
+│   └── screenshots/        Capturas del portafolio para este README
 └── assets/certs/           PDFs reales de certificaciones
 ```
 
